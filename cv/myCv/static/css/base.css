@@ -1,0 +1,12 @@
+body{
+    color: darkgrey;
+    background-color: antiquewhite;
+}
+
+.navbar{
+    color: #FFFFFF !important;
+
+}
+#bs-example-navbar-collapse-1{
+    color: #FFFFFF;
+}
