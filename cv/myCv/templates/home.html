@@ -12,4 +12,13 @@
         </div>
     </div>
 
+
+     {% if debug %}
+        <script type="text/babel" src="http://localhost:3000/bundle.js"></script>
+    {% else %}
+        <script type="text/babel" src="/static/js/index.jsx"></script>
+    {% endif %}
+
+
 {% endblock main %}
+

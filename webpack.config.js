@@ -1,3 +1,4 @@
+/** @jsx React.DOM */
 var path = require("path")
 var webpack = require('webpack')
 var BundleTracker = require('webpack-bundle-tracker')
@@ -26,7 +27,15 @@ module.exports = {
   module: {
     loaders: [
       // we pass the output from babel loader to react-hot loader
-      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot', 'babel'], },
+      { test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel',
+        query:
+            {
+                presets:['es2015', 'react']
+            },
+
+      },
     ],
   },
 
@@ -35,3 +44,4 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   }
 }
+
