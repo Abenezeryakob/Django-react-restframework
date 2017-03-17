@@ -3,22 +3,16 @@
 {% load i18n %}
 {% block head %}
     <link href="{% static 'css/home.css' %}" rel="stylesheet">
- {% endblock head %}
+{% endblock head %}
 {% block main %}
     <div class="container-fluid ">
         <div class="row " id="root">
-
-
         </div>
     </div>
 
-
-     {% if debug %}
-        <script type="text/babel" src="http://localhost:3000/bundle.js"></script>
-    {% else %}
-        <script type="text/babel" src="/static/js/index.jsx"></script>
-    {% endif %}
-
-
 {% endblock main %}
+{% block javascript %}
+    {{ block.super }}
+    <script src="http://localhost:3000/static/bundles/bundle.js"></script>
 
+{% endblock %}

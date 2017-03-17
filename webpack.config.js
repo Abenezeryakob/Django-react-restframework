@@ -14,7 +14,7 @@ module.exports = {
 
   output: {
       path: path.resolve('./cv/static/bundles/'),
-      filename: '[name]-[hash].js',
+      filename: 'bundle.js',
       publicPath: 'http://localhost:3000/static/bundles/', // Tell django to use this URL to load packages and not use STATIC_URL + bundle_name
   },
 

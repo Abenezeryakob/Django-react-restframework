@@ -4,18 +4,20 @@ var NewComponent = React.createClass({
   render: function() {
     return (
       <div>
-        {/* Hello world */}
         <div className="awesome" style={{border: '1px solid red'}}>
-          <label htmlFor="name">Enter your name: </label>
-          <input type="text" id="name" />
+          Test of simple working komponent
         </div>
         <p>Enter your HTML here</p>
+
       </div>
     );
   }
 });
 
+
+
   ReactDOM.render(
+    <NewComponent/>,
 
     document.getElementById('root')
   );
