@@ -1,0 +1,1 @@
+{"status":"error","publicPath":"http://localhost:3000/static/bundles/","error":"ModuleNotFoundError","message":"Module not found: Error: Can't resolve 'react/lib/ReactMount' in '/Users/abenezeryakob/Documents/self/apps/static/js'"}

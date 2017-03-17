@@ -1,11 +1,27 @@
 {
-  "name": "cv",
+  "name": "self",
   "version": "1.0.0",
-  "description": "cv with react",
-  "main": "cv",
+  "description": "",
+  "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
-
+  "devDependencies": {
+    "@types/selenium-webdriver": "^2.44.26",
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "react": "^15.4.2",
+    "react-hot-loader": "^1.3.1",
+    "webpack": "^2.1.0-beta.21",
+    "webpack-bundle-tracker": "0.2.0",
+    "webpack-dev-server": "2.1.0-beta.9"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js --progress --colors",
+    "build-production": "webpack --config webpack.prod.config.js --progress --colors",
+    "watch": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abenezeryakob/Django-react-restframework.git"
@@ -15,10 +31,5 @@
   "bugs": {
     "url": "https://github.com/Abenezeryakob/Django-react-restframework/issues"
   },
-  "homepage": "https://github.com/Abenezeryakob/Django-react-restframework#readme",
-  "scripts": {
-  "build": "webpack --config webpack.config.js --progress --colors",
-  "build-production": "webpack --config webpack.prod.config.js --progress --colors",
-  "watch": "node server.js"
-  }
+  "homepage": "https://github.com/Abenezeryakob/Django-react-restframework#readme"
 }
