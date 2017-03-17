@@ -1,0 +1,24 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "cv with react",
+  "main": "cv",
+  "dependencies": {},
+  "devDependencies": {},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abenezeryakob/Django-react-restframework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abenezeryakob/Django-react-restframework/issues"
+  },
+  "homepage": "https://github.com/Abenezeryakob/Django-react-restframework#readme",
+  "scripts": {
+  "build": "webpack --config webpack.config.js --progress --colors",
+  "build-production": "webpack --config webpack.prod.config.js --progress --colors",
+  "watch": "node server.js"
+  }
+}
