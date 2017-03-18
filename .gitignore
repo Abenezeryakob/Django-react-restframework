@@ -3,6 +3,7 @@ venv
 staticfiles
 .env
 env
+migrations
 node_modules
 [project-name]/static/build
 db.sqlite3

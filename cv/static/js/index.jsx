@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Credents from './components/credents'
 var NewComponent = React.createClass({
   render: function() {
     return (
@@ -17,7 +18,10 @@ var NewComponent = React.createClass({
 
 
   ReactDOM.render(
-    <NewComponent/>,
+    <div>
+      <Credents></Credents>
+    </div>,
+
 
     document.getElementById('root')
   );
