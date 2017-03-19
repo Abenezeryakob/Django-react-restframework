@@ -1,26 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Credents from './components/credents'
-var NewComponent = React.createClass({
-  render: function() {
-    return (
-      <div>
-        <div className="awesome" style={{border: '1px solid red'}}>
-          Test of simple working komponent
-        </div>
-        <p>Enter your HTML here</p>
+import Education from './components/education'
+import { Provider } from 'react-redux'
+import ReduxPromise from 'redux-promise'
+import { createStore, applyMiddleware } from 'redux'
+import reducers from './reducers/index';
+const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
-      </div>
-    );
-  }
-});
 
 
 
   ReactDOM.render(
-    <div>
-      <Credents></Credents>
-    </div>,
+    <Provider store={createStoreWithMiddleware(reducers)}>
+      <div>
+        <Credents></Credents>
+        <Education/>
+      </div>
+    </Provider>,
 
 
     document.getElementById('root')
