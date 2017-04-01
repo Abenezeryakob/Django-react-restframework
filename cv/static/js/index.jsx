@@ -5,16 +5,16 @@ import Education from './components/education'
 import { Provider } from 'react-redux'
 import ReduxPromise from 'redux-promise'
 import { createStore, applyMiddleware } from 'redux'
-import reducers from './reducers/index';
+import credentreducer from './reducers/index';
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 
 
 
   ReactDOM.render(
-    <Provider store={createStoreWithMiddleware(reducers)}>
+    <Provider store={createStoreWithMiddleware(credentreducer)}>
       <div>
-        <Credents></Credents>
+        <Credents/>
         <Education/>
       </div>
     </Provider>,

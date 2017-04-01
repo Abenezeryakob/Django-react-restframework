@@ -1,16 +1,15 @@
-export const CREDENTS = 'CREDENTS';
+export const ADD_CREDENTS_RESULT = 'ADD_CREDENTS_RESULT';
 import $ from '../jquery.min'
 
-export function addDefaultQuestionResult() {
+export default function defaultdata () {
 
-  const request = $.get('./home/api/credents/');
+  const request = $.get('./api/credents/');
+  console.log(request )
+  console.log('------------------------------')
 
   return {
     type: ADD_CREDENTS_RESULT,
     payload: request,
-    meta: {
-      filterID: 0,
-      filterName: ''
-    }
+
   }
 }
