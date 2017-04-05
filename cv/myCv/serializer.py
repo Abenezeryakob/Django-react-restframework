@@ -6,7 +6,6 @@ from rest_framework.response import Response
 
 class CredentsSerializer(ModelSerializer):
 
-
     class Meta:
         model = Credents
         fields = ['id','title','site','text','date']

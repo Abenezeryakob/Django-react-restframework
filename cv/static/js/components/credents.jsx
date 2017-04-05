@@ -1,41 +1,55 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
-
-import defaultdata from '../actions/action'
+import { Button } from 'react-bootstrap';
+import bindeActionCreators from 'react'
+import {defaultdata } from '../actions/action'
 class Credents extends React.Component {
 
+constructor(props){
+  super(props);
+  console.log(this.props)
+}
   componentWillMount(){
     this.props.defaultdata();
-      console.log('lalallalallalalallala')
-      console.log(this.props.defaultdata())
+
+    console.log('will mount');
+    console.log(this.props.results);
+  }
+  componentDidMount(){
+  }
+
+   createListItems(){
+      return (
+      this.props.results.creds.map((data)=>{
+       return(
+       <li key={data.id}>
+         {data.title}
+       </li>)
+
+       })
+   )
 
   }
   render() {
     return (
       <div className="section">
-        <div className="section-header">
-          <div className="credent_title">
-            <h2> Title</h2>
-          </div>
-          <div className="credent_date">
-            <h3> date </h3>
-          </div>
-        </div>
-        <div className="section-content">
-          <div className="credent_text">
-           <p> Text </p>
-          </div>
-        </div>
+        <Button className ='buttons'>button</Button>
+        <ul>
+          {this.createListItems()}
+        </ul>
       </div>
     )
   }
 }
 
-function mapStateToProps({results}) {
-  return {
-    results
-  };
-}
 
-export default connect(mapStateToProps, { defaultdata  })(Credents);
+const mapStateToProps  = ({results}) => {
+  console.log(results)
+  return   {results};
+};
+const mapDispatchToProps = (dispatch) => {
+  return bindeActionCreators({defaultdata:defaultdata},dispatch)
+};
+
+export default connect(mapStateToProps,{defaultdata} )(Credents);

@@ -1,13 +1,7 @@
-import ADD_CREDENTS_RESULT from '../actions/action'
-const credentreducer = (state = [{credentdata: {}}], action) => {
-  switch (action.type) {
-    case ADD_CREDENTS_RESULT:
-      return [...state, {
-          credentdata: action.payload
-        }]
-    default:
-      return state
-  }
-}
+import { combineReducers } from 'redux';
+import credentreducer  from './credent'
+const rootReducer = combineReducers({
+  results: credentreducer,
+});
 
-export default credentreducer
+export default rootReducer;

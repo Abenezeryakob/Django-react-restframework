@@ -1,12 +1,9 @@
 export const ADD_CREDENTS_RESULT = 'ADD_CREDENTS_RESULT';
 import $ from '../jquery.min'
 
-export default function defaultdata () {
+export function defaultdata () {
 
-  const request = $.get('./api/credents/');
-  console.log(request )
-  console.log('------------------------------')
-
+  const request = $.get('./api/credents/json?format=json');
   return {
     type: ADD_CREDENTS_RESULT,
     payload: request,
