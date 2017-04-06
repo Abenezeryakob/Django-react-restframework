@@ -5,7 +5,6 @@ var FontAwesome = require('react-fontawesome');
 var styles = {
   center:{
     textAlign:'center'
-
   }
 };
 export default class TitleAndIdentity extends React.Component {

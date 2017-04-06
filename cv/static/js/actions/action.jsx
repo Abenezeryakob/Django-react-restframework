@@ -1,5 +1,6 @@
 export const ADD_CREDENTS_RESULT = 'ADD_CREDENTS_RESULT';
 export const NAVBAR_CLICKED = 'NAVBAR_CLICKED';
+export const DEFAULT_ADRESS = 'DEFAULT_ADRESS';
 import $ from '../jquery.min'
 
 export function defaultdata () {
@@ -12,10 +13,17 @@ export function defaultdata () {
   }
 }
 
-export function navbarClicked (link) {
+export function navbarClicked (link_number) {
   return {
     type: NAVBAR_CLICKED,
-    payload: link,
+    payload: link_number,
+
+  }
+}
+export function getDefaultAdress () {
+  return {
+    type: DEFAULT_ADRESS,
+    payload: $.get('./api/adress/json?format=json'),
 
   }
 }

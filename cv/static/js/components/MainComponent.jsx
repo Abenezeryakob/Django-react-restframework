@@ -3,10 +3,12 @@ import TitleAndIdentity from './TitleAndIdentity'
 import Credents from './credents'
 import Education from './education'
 import AboutMe from './about'
+import Adress from './adress'
 import React from 'react';
 import { connect } from 'react-redux';
 import { Button, ButtonGroup} from 'react-bootstrap';
 import {navbarClicked } from '../actions/action'
+import {Grid, Row,Col,code} from 'react-bootstrap';
 
 export class MainContainer extends React.Component {
 
@@ -26,7 +28,6 @@ export class MainContainer extends React.Component {
     if(this.props.navbar.about){
       return(<AboutMe/>)
     }
-
   }
   render() {
     return (
@@ -34,7 +35,13 @@ export class MainContainer extends React.Component {
       <TitleAndIdentity/>
       <NavigationBar props = {this.props}/>
       <div className="container">
-        {this.renderView()}
+          <Grid>
+            <Row className="show-grid">
+              <Col xs={12} md={8}>{this.renderView()}</Col>
+              <Col xs={6} md={4}><Adress/> </Col>
+            </Row>
+          </Grid>
+
       </div>
 	  </div>
     )
@@ -42,8 +49,9 @@ export class MainContainer extends React.Component {
 }
 
 const mapStateToProps  = ({navbar}) => {
+
   console.log(navbar)
   return   {navbar};
 };
 
-export default connect(mapStateToProps,{navbarClicked} )(MainContainer);
+export default connect(mapStateToProps,{navbarClicked})(MainContainer);
