@@ -1,40 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
-import { Button } from 'react-bootstrap';
+import { Button, ButtonGroup} from 'react-bootstrap';
 import bindeActionCreators from 'react'
 import {defaultdata } from '../actions/action'
+
+
+
+
+
 class Credents extends React.Component {
 
-constructor(props){
+ constructor(props){
   super(props);
-  console.log(this.props)
-}
+ }
   componentWillMount(){
     this.props.defaultdata();
 
-    console.log('will mount');
-    console.log(this.props.results);
-  }
-  componentDidMount(){
   }
 
-   createListItems(){
+  createListItems(){
       return (
-      this.props.results.creds.map((data)=>{
-       return(
-       <li key={data.id}>
-         {data.title}
-       </li>)
-
-       })
-   )
-
+        this.props.results.creds.map((data)=>{
+         return(
+         <li key={data.id}>
+           {data.title}
+         </li>)
+         })
+      )
   }
   render() {
     return (
       <div className="section">
-        <Button className ='buttons'>button</Button>
+          <ButtonGroup>
+            <Button>test</Button>
+            <Button>test</Button>
+            <Button>test</Button>
+          </ButtonGroup>
         <ul>
           {this.createListItems()}
         </ul>
@@ -45,7 +47,6 @@ constructor(props){
 
 
 const mapStateToProps  = ({results}) => {
-  console.log(results)
   return   {results};
 };
 const mapDispatchToProps = (dispatch) => {
