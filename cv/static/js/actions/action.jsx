@@ -1,4 +1,5 @@
 export const ADD_CREDENTS_RESULT = 'ADD_CREDENTS_RESULT';
+export const NAVBAR_CLICKED = 'NAVBAR_CLICKED';
 import $ from '../jquery.min'
 
 export function defaultdata () {
@@ -7,6 +8,14 @@ export function defaultdata () {
   return {
     type: ADD_CREDENTS_RESULT,
     payload: request,
+
+  }
+}
+
+export function navbarClicked (link) {
+  return {
+    type: NAVBAR_CLICKED,
+    payload: link,
 
   }
 }

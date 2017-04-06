@@ -5,10 +5,6 @@ import { Button, ButtonGroup} from 'react-bootstrap';
 import bindeActionCreators from 'react'
 import {defaultdata } from '../actions/action'
 
-
-
-
-
 class Credents extends React.Component {
 
  constructor(props){
