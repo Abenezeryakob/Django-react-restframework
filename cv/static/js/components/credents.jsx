@@ -28,11 +28,6 @@ class Credents extends React.Component {
   render() {
     return (
       <div className="section">
-          <ButtonGroup>
-            <Button>test</Button>
-            <Button>test</Button>
-            <Button>test</Button>
-          </ButtonGroup>
         <ul>
           {this.createListItems()}
         </ul>

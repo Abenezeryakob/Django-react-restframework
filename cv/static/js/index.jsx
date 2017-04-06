@@ -16,8 +16,6 @@ const storeWithMiddleware = createStoreWithMiddleware(rootReducer)
     <Provider store={storeWithMiddleware}>
       <div>
         <MainContainer/>
-        <Credents/>
-        <Education/>
       </div>
     </Provider>,
 
