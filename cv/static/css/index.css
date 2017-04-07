@@ -1,0 +1,52 @@
+.react-sanfona-item{
+  margin-top: 2px;
+  background-color: #f6f7f9;
+  border-bottom: 1px solid #dddfe2;
+  border: 1px solid #dddfe2;
+  border-radius: 2px 2px 0 0;
+  padding: 5px;
+  box-shadow: 2px 2px 1px #b3b3b3;
+}
+.react-sanfona-item-expanded	{
+  position: relative;
+  border: 1px solid #dddfe2;
+  box-shadow: 2px 2px 1px #888888;
+  margin:-4px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  z-index: 100;
+
+
+}
+.navbar{
+  box-shadow: 2px 2px 1px #b3b3b3;
+
+}
+.navbar-text{
+  color: white !important;
+}
+.adress-text{
+  color: #333 !important;
+
+}
+.react-sanfona-item-title	{
+  color: #4b4f56;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin: 10px;
+}
+.react-sanfona-item-body-wrapper	{
+  background-color: white;
+}
+.jumbotron{
+  margin-bottom: 0px;
+  padding-top: 5px;
+}
+.credent-accordion-item{
+
+}

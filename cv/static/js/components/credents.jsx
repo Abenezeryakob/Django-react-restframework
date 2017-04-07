@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
-import { Button, ButtonGroup} from 'react-bootstrap';
+import {  ButtonGroup} from 'react-bootstrap';
 import bindeActionCreators from 'react'
 import {defaultdata } from '../actions/action'
+import { Accordion, AccordionItem } from 'react-sanfona';
+
 
 class Credents extends React.Component {
 
@@ -19,9 +20,13 @@ class Credents extends React.Component {
       return (
         this.props.results.creds.map((data)=>{
          return(
-         <li key={data.id}>
-           {data.title}
-         </li>)
+           <AccordionItem className='react-sanfona-item-body' title={`Item ${ data.title }`} slug={data.id} key={data.id}>
+                    <div className="credent-accordion-item">
+                      <img height="16" width="16" src='http://www.google.com/s2/favicons?domain=www.edocuments.co.uk' />
+                      {`Item ${ data.text } content`}
+                       <p><img src="https://cloud.githubusercontent.com/assets/38787/8015584/2883817e-0bda-11e5-9662-b7daf40e8c27.gif" /></p>
+                    </div>
+           </AccordionItem>)
          })
       )
   }
@@ -29,7 +34,10 @@ class Credents extends React.Component {
     return (
       <div className="section">
         <ul>
-          {this.createListItems()}
+          	<Accordion className= 'react-sanfona' activeItems={0}>
+              {this.createListItems()}
+            </Accordion>
+
         </ul>
       </div>
     )

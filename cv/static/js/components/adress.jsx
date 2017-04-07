@@ -27,16 +27,16 @@ class Adress extends React.Component {
          return(
            <div>
            <div key={1}>
-             <h5><FontAwesome name='user' />   {data.name}</h5>
+             <h6 className="adress-text"><FontAwesome name='user' />   {data.name}</h6>
            </div>
             <div key={3}>
-              <h5><FontAwesome name='phone-square' />   {data.phone}</h5>
+              <h6 className="adress-text"><FontAwesome name='phone-square' />   {data.phone}</h6>
            </div>
             <div key={4}>
-              <h5><FontAwesome name='envelope' />   {data.email}</h5>
+              <h6 className="adress-text"><FontAwesome name='envelope' />   {data.email}</h6>
            </div>
              <div key={2}>
-              <h5><FontAwesome name='map-marker' />   {data.street} <br/>{data.post}</h5>
+              <h6 className="adress-text"><FontAwesome name='map-marker' />   {data.street} <br/>{data.post}</h6>
            </div>
          </div>
          )

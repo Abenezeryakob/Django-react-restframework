@@ -34,11 +34,11 @@ export class MainContainer extends React.Component {
     <div className="main-content">
       <TitleAndIdentity/>
       <NavigationBar props = {this.props}/>
-      <div className="container">
+      <div className="">
           <Grid>
             <Row className="show-grid">
-              <Col xs={12} md={8}>{this.renderView()}</Col>
-              <Col xs={6} md={4}><Adress/> </Col>
+              <Col xs={12} md={9}>{this.renderView()}</Col>
+              <Col xs={6} md={3}><Adress/> </Col>
             </Row>
           </Grid>
 

@@ -17,13 +17,13 @@ export default class NavigationBar extends React.Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-            <NavItem onClick={() => this.props.props.navbarClicked(1)} eventKey={1} href="#"><h4><FontAwesome name='bar-chart' /> Skills</h4></NavItem>
-            <NavItem onClick={() => this.props.props.navbarClicked(2)} eventKey={2} href="#"><h4><FontAwesome name='briefcase' />  Work</h4></NavItem>
-            <NavItem onClick={() => this.props.props.navbarClicked(3)} eventKey={3} href="#"><h4><FontAwesome name='graduation-cap' /> Education</h4></NavItem>
-            <NavItem onClick={() => this.props.props.navbarClicked(4)} eventKey={4} href="#"><h4><FontAwesome name='user-circle-o' /> About me</h4></NavItem>
+            <NavItem onClick={() => this.props.props.navbarClicked(1)} eventKey={1} href="#"><h5 className="navbar-text"><FontAwesome name='bar-chart' /> Skills</h5></NavItem>
+            <NavItem onClick={() => this.props.props.navbarClicked(2)} eventKey={2} href="#"><h5 className="navbar-text"><FontAwesome name='briefcase' />  Work</h5></NavItem>
+            <NavItem onClick={() => this.props.props.navbarClicked(3)} eventKey={3} href="#"><h5 className="navbar-text"><FontAwesome name='graduation-cap' /> Education</h5></NavItem>
+            <NavItem onClick={() => this.props.props.navbarClicked(4)} eventKey={4} href="#"><h5 className="navbar-text"><FontAwesome name='user-circle-o' /> About me</h5></NavItem>
           </Nav>
           <Nav pullRight>
-            <NavItem eventKey={1} href="#"><h4><FontAwesome name='download' /> Save cv as PDF</h4></NavItem>
+            <NavItem eventKey={1} href="#"><h5 className="navbar-text"><FontAwesome name='download' /> Save cv as PDF</h5></NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
