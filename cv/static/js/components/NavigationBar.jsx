@@ -6,7 +6,6 @@ var FontAwesome = require('react-fontawesome');
 export default class NavigationBar extends React.Component {
   constructor(props){
   super(props);
-  console.log(this.props)
   }
 
   render() {

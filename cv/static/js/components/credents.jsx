@@ -5,7 +5,7 @@ import bindeActionCreators from 'react'
 import {defaultdata } from '../actions/action'
 import { Accordion, AccordionItem } from 'react-sanfona';
 import {Grid, Row,Col,code} from 'react-bootstrap';
-
+import $ from '../jquery.min'
 
 class Credents extends React.Component {
 
@@ -23,6 +23,9 @@ class Credents extends React.Component {
       )
     }
   }
+  createHtmlelement(data){
+
+  }
   createListItems(){
       return (
         this.props.results.creds.map((data)=>{
@@ -34,7 +37,7 @@ class Credents extends React.Component {
                               <a href={'https://'+data.site}>
                               <Col xs={7} md={7}>
                                 <h6 className="credent-site-link-name">At: </h6>
-                                  <img className="credent-site-link-image" height="16" width="16" src={'http://www.google.com/s2/favicons?domain='+data.site} />
+                                  <img className="credent-site-link-image" height="20" width="20" src={'http://www.google.com/s2/favicons?domain='+data.site} />
                                 <h6 className="credent-site-link-name">{data.name}</h6>
                               </Col>
                                </a>
@@ -47,7 +50,7 @@ class Credents extends React.Component {
                       </div>
                       <div className="crednt-text">
                         {this.showimage(data.image)}
-                        <p> {  data.text }</p>
+                        <td dangerouslySetInnerHTML={{__html:  data.text }} />
                       </div>
                     </div>
            </AccordionItem>)

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'myCv',
     'webpack_loader',
     'rest_framework',
+    'djrichtextfield',
 ]
 
 MIDDLEWARE = [
@@ -113,6 +114,16 @@ WEBPACK_LOADER = {
     }
 }
 
+DJRICHTEXTFIELD_CONFIG = {
+    'js': ['//tinymce.cachefly.net/4.1/tinymce.min.js'],
+    'init_template': 'djrichtextfield/init/tinymce.js',
+    'settings': {
+        'menubar': False,
+        'plugins': 'link image',
+        'toolbar': 'bold italic | link image | removeformat',
+        'width': 700
+    }
+}
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 

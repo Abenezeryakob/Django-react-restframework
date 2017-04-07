@@ -18,5 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^home/', include("myCv.urls"))
+    url(r'^home/', include("myCv.urls")),
+    url(r'^djrichtextfield/', include('djrichtextfield.urls'))
+
 ]

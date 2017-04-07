@@ -4,6 +4,7 @@ import Credents from './credents'
 import Education from './education'
 import AboutMe from './about'
 import Adress from './adress'
+import Skills from './skills'
 import React from 'react';
 import { connect } from 'react-redux';
 import { Button, ButtonGroup} from 'react-bootstrap';
@@ -17,7 +18,7 @@ export class MainContainer extends React.Component {
   }
   renderView(){
     if(this.props.navbar.skill){
-      return('skill component')
+      return(<Skills/>)
     }
     if(this.props.navbar.work){
       return(<Credents/>)

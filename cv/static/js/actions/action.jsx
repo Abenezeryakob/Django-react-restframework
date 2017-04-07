@@ -1,6 +1,8 @@
 export const ADD_CREDENTS_RESULT = 'ADD_CREDENTS_RESULT';
 export const NAVBAR_CLICKED = 'NAVBAR_CLICKED';
 export const DEFAULT_ADRESS = 'DEFAULT_ADRESS';
+export const DEFAULT_SKILL = 'DEFAULT_SKILL';
+
 import $ from '../jquery.min'
 
 export function defaultdata () {
@@ -24,6 +26,13 @@ export function getDefaultAdress () {
   return {
     type: DEFAULT_ADRESS,
     payload: $.get('./api/adress/json?format=json'),
+
+  }
+}
+export function getDefaultSkill () {
+  return {
+    type: DEFAULT_SKILL,
+    payload: $.get('./api/skills/json?format=json'),
 
   }
 }
