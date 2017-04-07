@@ -11,8 +11,17 @@
 }
 .adress-text{
   color: #333 !important;
+  white-space: nowrap;
+
 
 }
+.fa{
+    white-space: nowrap !important;
+  display:inline;
+
+
+}
+
 .adress-image-container{
   margin-left: 50px;
 
@@ -57,7 +66,7 @@
 
 .react-sanfona-item-title	{
   color: #4b4f56;
-  font-size: 18px;
+  font-size: 14px;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -75,7 +84,13 @@
 }
 .credent-accordion-item{
  padding: 10px;
- padding-top: 20px;
+ padding-top: 30px;
+ margin: 0px;
+}
+.react-sanfona-item-body:hover{
+  background-color: #e6e6e6;
+  opacity: 0.9;
+
 }
 .credent-site-link-image{
   display:inline;
@@ -89,4 +104,55 @@
 .crednt-text{
   margin-top: 20px;
   margin-top: 10px;
+}
+
+ table {
+        width: 100%;
+     box-shadow: 2px 2px 1px #b3b3b3;
+     border: 1px solid #dddfe2;
+       border-radius: 2px;
+
+    }
+thead tr {
+        width: 100%;
+        height: 50px;
+        background-color: #f6f7f9;
+}
+tbody tr {
+        height: 60px;
+        background-color: white;
+}
+
+th, td {
+        font-size: 14px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+}
+th {
+        font-weight: 500;
+}
+td {
+  vertical-align: middle;
+  padding-right: 10px;
+  padding: 10px 0;
+
+
+}
+strong {
+            vertical-align: top;
+            margin-right: 10px;
+            font-weight: 500;
+}
+
+p{
+  margin: 10px;
+}
+
+.table-text{
+  margin: 10px;
+  white-space: nowrap;
+    display:inline;
+
+
+
 }

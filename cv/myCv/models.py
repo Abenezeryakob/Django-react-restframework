@@ -43,11 +43,11 @@ class Education(models.Model):
 
 class Skills(models.Model):
     SKILL_CHOICES = (
-        ('languge', 'LANGUGE'),
+        ('Panguge', 'LANGUGE'),
         ('programming', 'PROGRAMMING'),
-        ('selftaught', 'SELFTOUGHT'),
-        ('framworks', 'FRAMEWORKS'),
-        ('other', 'OTHER'),
+        ('Selftaught', 'SELFTOUGHT'),
+        ('Framworks', 'FRAMEWORKS'),
+        ('Other', 'OTHER'),
     )
     SKILL_GRADE = (
         ('1', '1'),
@@ -60,5 +60,8 @@ class Skills(models.Model):
     type = models.CharField(max_length=70, choices=SKILL_CHOICES,null=True, blank=True)
     grade = models.CharField(max_length=70, choices=SKILL_GRADE,null=True, blank=True)
     name = models.CharField(max_length=70, null=True, blank=True)
+    img = models.CharField(max_length=500, null=True, blank=True)
+    def __str__(self):
+        return self.name
 
 

@@ -60,12 +60,9 @@ class Credents extends React.Component {
   render() {
     return (
       <div className="section">
-        <ul>
           	<Accordion className= 'react-sanfona' activeItems={0}>
               {this.createListItems()}
             </Accordion>
-
-        </ul>
       </div>
     )
   }
@@ -74,9 +71,6 @@ class Credents extends React.Component {
 
 const mapStateToProps  = ({results}) => {
   return   {results};
-};
-const mapDispatchToProps = (dispatch) => {
-  return bindeActionCreators({defaultdata:defaultdata},dispatch)
 };
 
 export default connect(mapStateToProps,{defaultdata} )(Credents);

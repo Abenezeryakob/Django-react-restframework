@@ -18,4 +18,4 @@ class AdressSerializer(ModelSerializer):
 class SkilsSerializer(ModelSerializer):
     class Meta:
         model = Skills
-        fields = ['type','grade','name']
+        fields = ['id','type','grade','name','img']

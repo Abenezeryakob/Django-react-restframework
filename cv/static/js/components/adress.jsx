@@ -17,7 +17,6 @@ class Adress extends React.Component {
  }
  componentWillMount(){
     this.props.getDefaultAdress();
-    console.log(this.props.adress)
 
   }
 
@@ -27,7 +26,7 @@ class Adress extends React.Component {
          return(
            <div>
            <div key={1}>
-             <h6 className="adress-text"><FontAwesome name='user' />   {data.name}</h6>
+             <h6 className="adress-text"><FontAwesome className="adress-text" name='user' />   {data.name}</h6>
            </div>
             <div key={3}>
               <h6 className="adress-text"><FontAwesome name='phone-square' />   {data.phone}</h6>
@@ -45,7 +44,7 @@ class Adress extends React.Component {
   }
   render() {
     return (
-      <div className="section">
+      <div className="">
         <div className="adress-image-container">
           <div className="image-cropper">
             <img className="my-picture" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/10438557_650388721742058_145228249471181096_n.jpg?oh=46dd42d542c6abcd30b97770867e0993&oe=594E70C4" alt="This is a picture of me"/>
@@ -60,7 +59,6 @@ class Adress extends React.Component {
 }
 
 const mapStateToProps  = ({adress}) => {
-  console.log(adress)
 
   return   {adress};
 };
