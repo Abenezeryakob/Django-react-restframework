@@ -36,8 +36,7 @@ class Education(models.Model):
     title = models.CharField(max_length=70, null=True, blank=True)
     name = models.CharField(max_length=70, null=True, blank=True)
     site = models.CharField(max_length=70, null=True, blank=True)
-    fromdate = models.CharField(max_length=70, null=True, blank=True)
-    todate = models.CharField(max_length=70, null=True, blank=True)
+    progrress = models.CharField(max_length=70, null=True, blank=True)
     def __str__(self):
         return self.title
 

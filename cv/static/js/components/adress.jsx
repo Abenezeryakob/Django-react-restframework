@@ -44,7 +44,7 @@ class Adress extends React.Component {
   }
   render() {
     return (
-      <div className="">
+      <div className="adress-container">
         <div className="adress-image-container">
           <div className="image-cropper">
             <img className="my-picture" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/10438557_650388721742058_145228249471181096_n.jpg?oh=46dd42d542c6abcd30b97770867e0993&oe=594E70C4" alt="This is a picture of me"/>

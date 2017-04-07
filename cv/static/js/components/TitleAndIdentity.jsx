@@ -12,9 +12,11 @@ export default class TitleAndIdentity extends React.Component {
   render() {
     return (
       <Jumbotron>
+        <div className="jumbotron-title">
         <h1 style={styles.center}>CV</h1>
         <p  style={styles.center}>Built with Django,React-Redux, RestApi, Bootstrap </p>
         <h5  style={styles.center}>Yes, it's overkill :)</h5>
+         </div>
       </Jumbotron>
 
     )

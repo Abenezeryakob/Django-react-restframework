@@ -15,7 +15,7 @@ export default class NavigationBar extends React.Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav>
+          <Nav className="nav-group">
             <NavItem onClick={() => this.props.props.navbarClicked(1)} eventKey={1} href="#"><h5 className="navbar-text"><FontAwesome name='bar-chart' /> Skills</h5></NavItem>
             <NavItem onClick={() => this.props.props.navbarClicked(2)} eventKey={2} href="#"><h5 className="navbar-text"><FontAwesome name='briefcase' />  work experience</h5></NavItem>
             <NavItem onClick={() => this.props.props.navbarClicked(3)} eventKey={3} href="#"><h5 className="navbar-text"><FontAwesome name='graduation-cap' /> Education</h5></NavItem>

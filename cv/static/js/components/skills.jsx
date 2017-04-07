@@ -27,7 +27,7 @@ class Skills extends React.Component {
                   <h6 className="table-text">{data.name}</h6>
                 </td>
                 <td><h6 className="table-text">{data.type}</h6></td>
-                <td> <ReactStars value={parseInt(data.grade)} onChange={1} edit={false} count={5}  size={15} color2={'#ffd700'} />
+                <td> <ReactStars value={parseInt(data.grade)}  onChange={1} edit={false} count={5}  size={15} color2={'#ffd700'} />
                 </td>
             </tr>
 

@@ -35,11 +35,11 @@ export class MainContainer extends React.Component {
     <div className="main-content">
       <TitleAndIdentity/>
       <NavigationBar props = {this.props}/>
-      <div className="continer">
+      <div className="">
           <Grid>
             <Row className="show-grid">
               <Col xs={10} md={9}>{this.renderView()}</Col>
-              <Col xs={6} md={3}><Adress/> </Col>
+              <Col className="adress-container" xs={6} md={3}><Adress/> </Col>
             </Row>
           </Grid>
 

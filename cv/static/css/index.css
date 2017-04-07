@@ -5,7 +5,14 @@
 .navbar-text{
   color: white !important;
 }
-
+.nav{
+  margin-left: 90px;
+}
+.nav-group{
+}
+.container{
+  margin-left: 10%;
+}
 .h1 .h2 .h3 .h4 .h5{
  color: #4b4f56 !important;
 }
@@ -13,7 +20,9 @@
   color: #333 !important;
   white-space: nowrap;
 
-
+}
+.adress-container{
+  margin-top: 10px;
 }
 .fa{
     white-space: nowrap !important;
@@ -81,6 +90,11 @@
 .jumbotron{
   margin-bottom: 0px;
   padding-top: 5px;
+  padding-bottom: 15px;
+}
+.jumbotron-title{
+  display: inline-block;
+  margin-left: 15%;
 }
 .credent-accordion-item{
  padding: 10px;
@@ -95,6 +109,7 @@
 .credent-site-link-image{
   display:inline;
   white-space: nowrap;
+  margin: 5px;
 }
 .credent-site-link-name{
   margin-left: 4px;
