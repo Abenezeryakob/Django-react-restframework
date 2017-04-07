@@ -1,3 +1,39 @@
+.navbar{
+  box-shadow: 2px 2px 1px #b3b3b3;
+
+}
+.navbar-text{
+  color: white !important;
+}
+
+.h1 .h2 .h3 .h4 .h5{
+ color: #4b4f56 !important;
+}
+.adress-text{
+  color: #333 !important;
+
+}
+.adress-image-container{
+  margin-left: 50px;
+
+}
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 2px solid white;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    overflow:hidden;
+    align-content: center;
+}
+.my-picture {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    width: 150%;
+}
 .react-sanfona-item{
   margin-top: 2px;
   background-color: #f6f7f9;
@@ -18,20 +54,10 @@
 
 
 }
-.navbar{
-  box-shadow: 2px 2px 1px #b3b3b3;
 
-}
-.navbar-text{
-  color: white !important;
-}
-.adress-text{
-  color: #333 !important;
-
-}
 .react-sanfona-item-title	{
   color: #4b4f56;
-  font-size: 14px;
+  font-size: 18px;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -48,5 +74,15 @@
   padding-top: 5px;
 }
 .credent-accordion-item{
-
+ padding: 10px;
+ padding-top: 20px;
+}
+.credent-site-link-image{
+  display:inline;
+  white-space: nowrap;
+}
+.credent-site-link-name{
+  margin-left: 4px;
+  display:inline;
+  white-space: nowrap;
 }

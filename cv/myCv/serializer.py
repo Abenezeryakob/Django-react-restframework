@@ -8,7 +8,7 @@ class CredentsSerializer(ModelSerializer):
 
     class Meta:
         model = Credents
-        fields = ['id','title','site','text','date']
+        fields = ['id','title','name','site','text','fromdate','todate']
 
 class AdressSerializer(ModelSerializer):
     class Meta:

@@ -37,7 +37,7 @@ export class MainContainer extends React.Component {
       <div className="">
           <Grid>
             <Row className="show-grid">
-              <Col xs={12} md={9}>{this.renderView()}</Col>
+              <Col xs={10} md={9}>{this.renderView()}</Col>
               <Col xs={6} md={3}><Adress/> </Col>
             </Row>
           </Grid>
