@@ -4,7 +4,6 @@ import {changeSkillFilter} from '../actions/action'
 import { connect } from 'react-redux';
 import {getDefaultSkill } from '../actions/action'
 
-
 class FilterComponent extends React.Component {
   constructor(props){
     super(props)

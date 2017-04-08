@@ -23,9 +23,7 @@ class Credents extends React.Component {
       )
     }
   }
-  createHtmlelement(data){
 
-  }
   createListItems(){
       return (
         this.props.results.creds.map((data)=>{

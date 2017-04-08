@@ -3,6 +3,7 @@ coverage==4.3.4
 defusedxml==0.5.0
 dj-database-url==0.4.2
 Django==1.10.5
+django-richtextfield==1.1
 django-webpack-loader==0.4.1
 djangorestframework==3.6.2
 gunicorn==19.7.0
