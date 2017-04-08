@@ -3,6 +3,7 @@ import {Grid, Row,Col,code} from 'react-bootstrap';
 import {getDefaultSkill } from '../actions/action'
 import { connect } from 'react-redux';
 import ReactStars from 'react-stars'
+import FilterComponent from './filter'
 
 
 class Skills extends React.Component {
@@ -11,12 +12,11 @@ class Skills extends React.Component {
   }
   componentWillMount(){
     this.props.getDefaultSkill();
-    console.log(this.props)
-
+    //console.log(this.props)
   }
-
   renderTableBody(){
     return(
+
       this.props.skills.skill.map((data)=>{
 
         return(
@@ -37,9 +37,9 @@ class Skills extends React.Component {
     )
   }
   render() {
-    console.log(this.props)
     return (
       <div className="section">
+      <FilterComponent />
         <table>
           <thead>
             <tr>
@@ -66,7 +66,6 @@ class Skills extends React.Component {
   }
 }
 const mapStateToProps  = ({skills}) => {
-  console.log(skills)
   return   {skills};
 };
 

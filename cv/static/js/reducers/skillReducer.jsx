@@ -5,8 +5,9 @@ const skillReducer = (state = INITIAL_CREDENT_STATE, action) => {
   switch(action.type){
     case 'DEFAULT_SKILL':
       return { ...state, skill:action.payload};
-      break;
-
+    case 'CHANGE_FILTER':
+      return {...state,skill:action.payload};
+    break;
     default:
       return state;
   }

@@ -1,13 +1,10 @@
 import {Nav, Image,Navbar,NavItem,Button, ButtonGroup,Jumbotron} from 'react-bootstrap';
 import React from 'react';
-
 var FontAwesome = require('react-fontawesome');
-
 export default class NavigationBar extends React.Component {
   constructor(props){
   super(props);
   }
-
   render() {
     return (
       <Navbar inverse collapseOnSelect>

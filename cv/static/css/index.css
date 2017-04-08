@@ -11,7 +11,7 @@
 .nav-group{
 }
 .container{
-  margin-left: 10%;
+  margin-left: 20%;
 }
 .h1 .h2 .h3 .h4 .h5{
  color: #4b4f56 !important;
@@ -94,7 +94,7 @@
 }
 .jumbotron-title{
   display: inline-block;
-  margin-left: 15%;
+  margin-left: 32%;
 }
 .credent-accordion-item{
  padding: 10px;
@@ -166,8 +166,11 @@ p{
 .table-text{
   margin: 10px;
   white-space: nowrap;
-    display:inline;
-
-
-
+  display:inline;
+}
+.filter-button-group{
+  margin: 15px;
+}
+.btn:focus,.btn:active {
+   outline: none !important;
 }

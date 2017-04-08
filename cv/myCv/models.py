@@ -42,10 +42,10 @@ class Education(models.Model):
 
 class Skills(models.Model):
     SKILL_CHOICES = (
-        ('Panguge', 'LANGUGE'),
-        ('programming', 'PROGRAMMING'),
-        ('Selftaught', 'SELFTOUGHT'),
-        ('Framworks', 'FRAMEWORKS'),
+        ('Language', 'LANGUGE'),
+        ('Programming', 'PROGRAMMING'),
+        ('Self taught', 'SELFTOUGHT'),
+        ('Software framework', 'FRAMEWORKS'),
         ('Other', 'OTHER'),
     )
     SKILL_GRADE = (
