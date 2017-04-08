@@ -1,5 +1,5 @@
 .navbar{
-  box-shadow: 2px 2px 1px #b3b3b3;
+  box-shadow: 2px 2px 1px #c9c9c9;
 
 }
 .navbar-text{
@@ -11,7 +11,7 @@
 .nav-group{
 }
 .container{
-  margin-left: 20%;
+  margin-left: 10%;
 }
 .h1 .h2 .h3 .h4 .h5{
  color: #4b4f56 !important;
@@ -59,12 +59,12 @@
   border: 1px solid #dddfe2;
   border-radius: 2px 2px 0 0;
   padding: 5px;
-  box-shadow: 2px 2px 1px #b3b3b3;
+  box-shadow: 1px 1px 1px #c9c9c9;
 }
 .react-sanfona-item-expanded	{
   position: relative;
   border: 1px solid #dddfe2;
-  box-shadow: 2px 2px 1px #888888;
+  box-shadow: 1px 1px 1px #888888;
   margin:-4px;
   margin-top: 1px;
   margin-bottom: 2px;
@@ -102,8 +102,7 @@
  margin: 0px;
 }
 .react-sanfona-item-body:hover{
-  background-color: #e6e6e6;
-  opacity: 0.9;
+  background-color: #fff;
 
 }
 .credent-site-link-image{
@@ -122,10 +121,11 @@
 }
 
  table {
-        width: 100%;
-     box-shadow: 2px 2px 1px #b3b3b3;
+     width: 100%;
+     box-shadow: 1px 1px 1px #c9c9c9;
      border: 1px solid #dddfe2;
-       border-radius: 2px;
+     border-radius: 2px 2px 3px 3px;
+     margin-bottom: 40px;
 
     }
 thead tr {
@@ -171,4 +171,17 @@ p{
 }
 .btn:focus,.btn:active {
    outline: none !important;
+  border-color: inherit;
+}
+.btn{
+  background-color: transparent;
+  box-shadow: 0px 0px 0px #c9c9c9;
+}
+.navbar-inverse {
+     background: #464040;
+  /* background: -webkit-linear-gradient(left, red, yellow);  For Safari 5.1 to 6.0 */
+  /* background: -o-linear-gradient(right, red, yellow);  For Opera 11.1 to 12.0 */
+  /* background: -moz-linear-gradient(right, red, yellow);  For Firefox 3.6 to 15 */
+  /* background: linear-gradient(to right, red, yellow); */
+  border-color: inherit;
 }

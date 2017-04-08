@@ -1,9 +1,9 @@
 export const ADD_CREDENTS_RESULT = 'ADD_CREDENTS_RESULT';
-export const NAVBAR_CLICKED = 'NAVBAR_CLICKED';
 export const DEFAULT_ADRESS = 'DEFAULT_ADRESS';
 export const DEFAULT_SKILL = 'DEFAULT_SKILL';
+export const DEFAULT_EDUCATION = 'DEFAULT_EDUCATION';
+export const NAVBAR_CLICKED = 'NAVBAR_CLICKED';
 export const CHANGE_FILTER = 'CHANGE_FILTER';
-
 import $ from '../jquery.min'
 
 export function defaultdata () {
@@ -16,13 +16,6 @@ export function defaultdata () {
   }
 }
 
-export function navbarClicked (link_number) {
-  return {
-    type: NAVBAR_CLICKED,
-    payload: link_number,
-
-  }
-}
 export function getDefaultAdress () {
   return {
     type: DEFAULT_ADRESS,
@@ -34,6 +27,19 @@ export function getDefaultSkill () {
   return {
     type: DEFAULT_SKILL,
     payload: $.get('./api/skills/json?format=json'),
+  }
+}
+export function getDefaultEducation () {
+  return {
+    type: DEFAULT_EDUCATION,
+    payload: $.get('./api/education/json?format=json'),
+  }
+}
+
+export function navbarClicked (link_number) {
+  return {
+    type: NAVBAR_CLICKED,
+    payload: link_number,
 
   }
 }

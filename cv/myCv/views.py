@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from rest_framework.generics import  RetrieveAPIView
-from .models import Credents,Adress,Skills
+from .models import Credents,Adress,Skills,Education
 from rest_framework.permissions import IsAuthenticated
 
 from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
-from .serializer import CredentsSerializer, AdressSerializer ,SkilsSerializer
+from .serializer import CredentsSerializer, AdressSerializer ,SkilsSerializer, EducationSerializer
 from rest_framework.views import APIView
 from rest_framework.decorators import api_view,renderer_classes
 
@@ -32,6 +32,15 @@ def credent_list(request):
     if request.method == 'GET':
         credents = Credents.objects.all()
         serializer = CredentsSerializer(credents, many=True)
+        return Response(serializer.data)
+@api_view(['GET'])
+def education_list_view(request):
+    """
+    List all Creds,
+    """
+    if request.method == 'GET':
+        education = Education.objects.all()
+        serializer = EducationSerializer(education, many=True)
         return Response(serializer.data)
 @api_view(['GET'])
 def adress_list(request):
@@ -73,6 +82,5 @@ class SkillFilterAPIView(APIView):
     permission_classes = (IsAuthenticated,)
     #renderer_classes = (JSONRenderer,)
     def get(self, request, skills_type):
-        print(type(skills_type),'*****************************************')
         available_filters = Skills.objects.filter(type=str(skills_type))
         return Response(available_filters)

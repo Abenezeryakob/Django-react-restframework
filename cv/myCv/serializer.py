@@ -19,3 +19,8 @@ class SkilsSerializer(ModelSerializer):
     class Meta:
         model = Skills
         fields = ['id','type','grade','name','img']
+
+class EducationSerializer(ModelSerializer):
+    class Meta:
+        model = Education
+        fields = ['id','title','name','site','progrress']
