@@ -45,6 +45,8 @@ class Credents extends React.Component {
                                  </h6>
                                </Col>
                             </Row>
+                        <hr></hr>
+
                       </div>
                       <div className="crednt-text">
                         {this.showimage(data.image)}

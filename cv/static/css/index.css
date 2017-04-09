@@ -13,8 +13,11 @@
 .container{
   margin-left: 10%;
 }
-.h1 .h2 .h3 .h4 .h5{
+h1 h2 h3 h4 h5{
  color: #4b4f56 !important;
+}
+hr{
+  margin: 0px;
 }
 .adress-text{
   color: #333 !important;
@@ -100,6 +103,7 @@
  padding: 10px;
  padding-top: 30px;
  margin: 0px;
+ padding-bottom: 0px;
 }
 .react-sanfona-item-body:hover{
   background-color: #fff;
@@ -110,6 +114,11 @@
   white-space: nowrap;
   margin: 5px;
 }
+.credent-site-link{
+    height: 60%;
+
+}
+
 .credent-site-link-name{
   margin-left: 4px;
   display:inline;
@@ -184,4 +193,29 @@ p{
   /* background: -moz-linear-gradient(right, red, yellow);  For Firefox 3.6 to 15 */
   /* background: linear-gradient(to right, red, yellow); */
   border-color: inherit;
+}
+.skill-td-id{
+  width: 5%;
+}
+.skill-td-name{
+  width: 50%;
+}
+.skill-td-type{
+  width: 20%;
+}
+.skill-td-grade{
+  width: 25%;
+}
+
+.education-td-1{
+  width: 35%;
+}
+.education-td-2{
+  width: 35%;
+}
+.education-td-3{
+  width: 40%;
+}
+.education-progress-bar{
+  width: 50%;
 }

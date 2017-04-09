@@ -21,13 +21,18 @@ class Skills extends React.Component {
 
         return(
               <tr>
-                <td><h6  className="table-text">{data.id}</h6></td>
-                <td>
+                <td className="skill-td-id">
+                  <h6  className="table-text">{data.id}</h6>
+                </td>
+                <td className="skill-td-name">
                   <img className="credent-site-link-image" height="40" width="50" src={data.img} />
                   <h6 className="table-text">{data.name}</h6>
                 </td>
-                <td><h6 className="table-text">{data.type}</h6></td>
-                <td> <ReactStars value={parseInt(data.grade)}  onChange={1} edit={false} count={5}  size={15} color2={'#ffd700'} />
+                <td className="skill-td-type">
+                  <h6 className="table-text">{data.type}</h6>
+                </td>
+                <td className="skill-td-grade">
+                  <ReactStars value={parseInt(data.grade)}  onChange={1} edit={false} count={5}  size={15} color2={'#ffd700'} />
                 </td>
             </tr>
 
