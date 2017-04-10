@@ -13,6 +13,11 @@
 {% endblock main %}
 {% block javascript %}
     {{ block.super }}
-    <script src="http://localhost:3000/static/bundles/bundle.js"></script>
+    {% if debug %}
+    <script src="http://localhost:3000/bundles/bundle.js"></script>
+
+    {% else %}
+        <script  src="/static/js/react-app.js"></script>
+    {% endif %}
 
 {% endblock %}

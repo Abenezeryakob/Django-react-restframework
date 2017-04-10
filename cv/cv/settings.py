@@ -24,7 +24,7 @@ APPS_DIR = '{0}/apps'.format(BASE_DIR)
 SECRET_KEY = '(vdq$41ju4ugwrdg&r(+sx6@zk3zl@$y39*$_s@+3d6*_25g_c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -126,7 +126,7 @@ DJRICHTEXTFIELD_CONFIG = {
 }
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
-
+ALLOWED_HOSTS = ['*']
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -143,3 +143,4 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = ( os.path.join('static'), )
